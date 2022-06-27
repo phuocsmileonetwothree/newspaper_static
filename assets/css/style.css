@@ -1,0 +1,422 @@
+body{
+    font-size: 16px;
+    font-family: Open Sans;
+    line-height: 1.5;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+.container{
+    width: 1140px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0px auto;
+    display: flex;
+}
+/* ====================================== HEADER ====================================== */
+
+#header{
+    background: #23282d;
+    padding-top: 28px;
+    padding-bottom: 9px;
+    
+}
+/* ---------------- SEARCH & LOGO ---------------- */
+#header #search{
+    position: relative;
+}
+
+#header #search input{
+    background: #131619;
+    color: #989898;
+    border: 0;
+    outline: 0;
+    padding: 9px 42px 9px 10px;
+}
+
+#header #search button{
+    color: #989898;
+    background: none;
+    border: 0;
+    outline: 0;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+/* ---------------- MAIN-MENU ---------------- */
+
+nav{
+    border-right: 10px solid #ff2d2d;
+    margin-top: 7px;
+    flex: 100%;
+}
+
+#header ul#main-menu{
+    margin-bottom: 0;
+}
+
+#header #main-menu li a{
+    display: block;
+    color: #e4e5e5;
+    font-weight: 600;
+    padding: 6px 20px;  
+}
+
+#header #main-menu li:hover a{
+    color: #4db2ec;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+#header #main-menu li:first-child a{
+    padding-left: 0;
+}
+
+
+/* ====================================== WP-FEATURED ====================================== */
+#wp-featured-post{
+    margin-top: 34px;
+    margin-bottom: 20px;
+}
+/* ---------- Thừa kế box [.box-head, .box-body] ----------- */
+.box .box-head{
+    font-weight: 600;
+    color: #eee;
+    text-transform: uppercase;
+}
+
+/* ----------- Tiêu đề FEATURED-POST ------------ */
+.featured-post .box-head h3{
+    display: inline-block;
+    background: #23282d;
+    margin-bottom: 0px;
+    padding: 1px 10px;
+    font-weight: 600;
+}
+
+/* ----------- Nội dung FEATURED-POST ------------ */
+.featured-post .box-body{
+    margin-top: 20px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #dadada;
+}
+
+ul#list-featured-post{
+    margin-bottom: 0;
+    
+}
+
+ul#list-featured-post li{
+    flex: 360px 0 1;
+}
+
+ul#list-featured-post li a{
+    display: block;
+}
+
+ul#list-featured-post li a.post-thumb{
+    overflow: hidden;
+}
+
+ul#list-featured-post li a.post-title{
+    font-weight: 600;
+    color: #5f5f5f;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+/* ---- :hover ----  */
+ul#list-featured-post li a.post-thumb img:hover{
+    transform: scale(1.05,1.05);
+    transition: all 0.5s;
+}
+
+/* ====================================== WP-CONTENT ====================================== */
+#wp-content{
+    margin-bottom: 80px;
+}
+/* ------------------------------------ CONTENT -------------------------------------- */
+#content{
+    flex: 750px 0 1;
+    padding-right: 15px;
+}
+
+#side-bar{
+    flex: 360px;
+    padding-left: 15px;
+}
+/* ----------- BOX-HEAD NEW POST ------------ */
+.new-post .box-head{
+    border-bottom: 2px solid #4db2ec;
+    margin-bottom: 30px;
+}
+.new-post .box-head h3{
+    display: inline-block;
+    color: #fcfcfc;
+    font-weight: 600;
+    background: #4db2ec;
+    margin-bottom: 0;
+    padding: 1px 6px;
+}
+
+/* ----------- BOX-BODY NEW POST ------------ */
+#list-new-post li{
+    display: flex;
+    margin-bottom: 40px;
+    overflow: hidden;
+}
+
+
+#list-new-post li .more-info{
+    padding-left: 30px;
+}
+
+#list-new-post li .more-info .post-title{
+    color: #111111;
+    font-size: 21px;
+    font-weight: 600;
+}
+
+#list-new-post li .more-info .post-published{
+    padding: 7px 0px;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+#list-new-post li .more-info .post-published .post-author{
+    color: #111;
+    margin-right: 5px;
+}
+#list-new-post li .more-info .post-published .post-date{
+    color: #aaa;
+}
+
+#list-new-post li .more-info .post-excrept{
+    font-weight: 400;
+    font-size: 13px;
+    color: #777777;
+}
+
+/* ---- :hover ---- */
+#list-new-post li .more-info .post-title:hover{
+    color: #4db2ec;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+#list-new-post li .post-thumb:hover{
+    transform: scale(1.05,1.05);
+    transition: all 0.5s;
+}
+
+/* ------------------------------------ SIDE-BAR -------------------------------------- */
+
+#side-bar a.ads{
+    display: block;
+    margin-bottom: 40px;
+}
+
+#side-bar .top-topic .box-head{
+    border-bottom: 2px solid #ff2d2d;
+    margin-bottom: 25px;
+}
+
+#side-bar .top-topic .box-head h3{
+    display: inline-block;
+    color: #fcfcfc;
+    font-weight: 600;
+    background: #ff2d2d;
+    margin-bottom: 0;
+    padding: 1px 6px;
+}
+
+ul#list-topic li{
+    position: relative;
+}
+
+ul#list-topic li a{
+    display: block;
+    color: #212121;
+    padding: 6px 0px;
+}
+
+ul#list-topic li a span.num-post{
+    position: absolute;
+    right: 0px;
+}
+
+/* ---- :hover ---- */
+ul#list-topic li:hover a{
+    color: #ff2d2d;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+/* ====================================== FOOTER ====================================== */
+#wp-footer{
+    background: #2e2f30;
+    padding-top: 53px;
+    padding-bottom: 75px;
+}
+
+/* ----------------- LOGO-FOOTER ---------------- */
+#wp-footer .logo-footer{
+    flex: 280px 0 1;
+    padding-right: 15px;
+}
+
+#wp-footer .logo-footer .box-head{
+    margin-bottom: 45px;
+}
+
+#wp-footer .logo-footer .box-head h3{
+    color: #2e2f30;
+}
+
+/* -------------------- ABOUT ------------------ */
+#wp-footer .about{
+    flex: 680px 0 1;
+    padding-left: 15px;
+    padding-right: 180px;
+}
+
+#wp-footer .about .box-head{
+    margin-bottom: 45px;
+}
+
+#wp-footer .about .box-head h3{
+    font-size: 18px;
+    font-weight: 600;
+    color: #f6f6f6;
+    
+}
+#wp-footer .about .box-body p{
+    
+    font-size: 14px;
+    color: #f6f6f6;
+    margin-bottom: 0;
+}
+
+#wp-footer .about .box-body a{
+    color: #f6f6f6;
+    text-decoration: underline;
+}
+
+/* ---- :hover ---- */
+#wp-footer .about .box-body a:hover{
+    color: #4db2ec;
+    text-decoration: none;
+}
+
+/* -------------------- SOCIAL ---------------- */
+#wp-footer .social{
+    flex: 180px 0 1;
+    padding-left: 15px;
+}
+
+#wp-footer .social .box-head{
+    margin-bottom: 45px;
+}
+
+#wp-footer .social .box-head h3{
+    color: #f6f6f6;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 45px;
+}
+
+#list-social li:not(:last-child){
+    margin-right: 10px;
+}
+
+#list-social li a{
+    display: block;
+    background: #434648;
+    color: #eee;
+}
+
+.fa-facebook-f{
+    padding: 9px 12px;
+}
+
+.fa-instagram{
+    padding: 9px 10px;
+}
+.fa-youtube{
+    padding: 9px 8px;
+}
+.fa-pinterest-p{
+    padding: 9px 11px
+}
+
+/* ---- :hover ---- */
+
+#list-social li:hover .fa-facebook-f{
+    color: #4267b2;
+    transition: all 0.5s;
+}
+
+#list-social li:hover .fa-instagram{
+    color: #8a3ab9;
+    transition: all 0.5s;
+}
+
+#list-social li:hover .fa-youtube{
+    color: #EA4335;
+    transition: all 0.5s;
+}
+
+#list-social li:hover .fa-pinterest-p{
+    background: #EA4335;
+    transition: all 0.5s;
+}
+
+/* ====================================== COPYRIGHT ====================================== */
+#wp-copyright{
+    background: #222527;
+}
+
+#wp-copyright .copyright{
+    flex: 848px 0 1;
+    padding-right: 30px;
+    margin-bottom: 0;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    /* padding-right: 30px; */
+    color: #fff;
+    font-size: 14px;
+}
+
+
+
+/* --------------- MENU-BOTTOM -------------- */
+ul#menu-bottom{
+    flex: 262px 0 1;
+    padding-left: 10px;
+    margin-bottom: 0;
+    font-size: 14px;
+}
+
+ul#menu-bottom li a{
+    display: block;
+    padding: 11px 5px;
+    color: #f3f3f3;
+    
+}
+
+ul#menu-bottom li:last-child a{
+    padding-right: 0;
+}
+
+ul#menu-bottom li:hover a{
+    color: #4db2ec;
+    text-decoration: none;
+}
+
+
